@@ -49,4 +49,10 @@ public class MainActivity extends Activity {
         Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.slide);
         image.startAnimation(animation1);
     }
+
+    public void more(View view){
+        ImageView image = (ImageView)findViewById(R.id.imageView);
+        Animation animation1 = AnimationUtils.loadAnimation(getApplicationContext(), R.anim.more);
+        image.startAnimation(animation1);
+    }
 }
