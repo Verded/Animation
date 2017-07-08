@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- Scale value:  need apply to both X and Y scale
+     less than 1: shrink
+      more than 1: enlarge
+
+      Pivot Value: 50% refer to remain action in same position
+    -->
+
     <scale xmlns:android="http://schemas.android.com/apk/res/android"
         android:fromXScale="0.5"
         android:toXScale="3.0"

@@ -1,11 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
 <set xmlns:android="http://schemas.android.com/apk/res/android">
 
+    <!-- image turn from current position 0 degree to 360 degrees, and then rotate back
+         Pivot X and Y = 50% refer to rotate on the current position
+    -->
+
     <rotate xmlns:android="http://schemas.android.com/apk/res/android"
         android:fromDegrees="0"
         android:toDegrees="360"
-        android:pivotX="50%"
-        android:pivotY="50%"
+        android:pivotX="0%"
+        android:pivotY="0%"
         android:duration="5000" >
     </rotate>
 
@@ -13,8 +17,8 @@
         android:startOffset="5000"
         android:fromDegrees="360"
         android:toDegrees="0"
-        android:pivotX="50%"
-        android:pivotY="50%"
+        android:pivotX="0%"
+        android:pivotY="0%"
         android:duration="5000" >
     </rotate>
 

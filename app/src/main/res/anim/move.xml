@@ -4,8 +4,23 @@
     android:interpolator="@android:anim/linear_interpolator"
     android:fillAfter="true">
 
+    <!-- X Delta refer to move from 30% of the screen width
+    startOffset allow the 2nd translate tag to start in next order
+    If fillAfter is true, this animation will apply its transformation after the end time of execution
+    -->
     <translate
         android:fromXDelta="0%p"
-        android:toXDelta="75%p"
-        android:duration="800" />
+        android:toXDelta="30%p"
+        android:duration="800"
+     />
+
+    <translate
+        android:startOffset="800"
+        android:fromXDelta="0%p"
+        android:toXDelta="-30%p"
+        android:duration="800"
+        />
+
+
+
 </set>
